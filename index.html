@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snack Rif</title>
 
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.logo {
+    width: 180px;
+    margin: 20px auto;
+    display: block;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #ff3b3b;
+    margin-bottom: 15px;
+}
+
+.address {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 14px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="logo.png" class="logo">
+
+<h1>SNACK RIF</h1>
+<p class="subtitle">Cafeteria & Fast Food</p>
+
+<p class="address">📍 Carrer de Francesc Manuel de los Herreros, Palma</p>
+
+<a href="/menu" class="btn">📋 Voir Menu</a>
+<a href="https://maps.app.goo.gl/WDaKmGK3VkDrU8276" class="btn">📍 Ouvrir Google Maps</a>
+
+<div class="map">
+<iframe src="https://maps.google.com/maps?q=Carrer%20de%20Francesc%20Manuel%20de%20los%20Herreros%20Palma&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+</div>
+
+</div>
+
+</body>
+</html>
