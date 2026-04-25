@@ -1,54 +1,77 @@
-}
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menu - Snack Rif</title>
+<title>Snack Rif Menu</title>
 
 <style>
 body {
-  margin: 0;
-  font-family: Arial;
-  background: #0d0d0d;
-  color: white;
-  text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #0d0d0d 0%, #1a0000 100%);
+    color: white;
+    text-align: center;
 }
 
-.container {
-  padding: 15px;
-}
-
+/* LOGO /
 .logo {
-  width: 120px;
-  border-radius: 12px;
-  margin-top: 15px;
+    margin-top: 20px;
 }
 
+.logo img {
+    width: 120px;
+}
+
+/ TITLE /
 h1 {
-  margin: 10px 0 20px;
+    margin: 10px 0;
+    font-size: 28px;
+    letter-spacing: 2px;
 }
 
+/ MENU IMAGES /
 .menu-img {
-  width: 100%;
-  max-width: 500px;
-  margin: 15px auto;
-  border-radius: 15px;
-  display: block;
-  box-shadow: 0 0 20px rgba(255,0,0,0.3);
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 15px;
+    display: block;
+    box-shadow: 0 10px 25px rgba(255,0,0,0.25);
+    transition: transform 0.3s ease;
 }
 
+.menu-img:hover {
+    transform: scale(1.03);
+}
+
+/ BUTTON /
 .btn {
-  display: block;
-  margin: 25px auto;
-  padding: 15px;
-  width: 90%;
-  max-width: 300px;
-  background: red;
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
+    display: inline-block;
+    margin: 30px 0;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, red, #ff4d4d);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #cc0000, red);
+    transform: scale(1.05);
+}
+
+/ MOBILE */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
 }
 </style>
 
@@ -56,9 +79,9 @@ h1 {
 
 <body>
 
-<div class="container">
-
-<img src="logo.png" class="logo">
+<div class="logo">
+    <img src="logo.png" alt="Snack Rif">
+</div>
 
 <h1>📋 MENU</h1>
 
@@ -69,9 +92,7 @@ h1 {
 <img src="menu5.jpg" class="menu-img">
 <img src="menu6.jpg" class="menu-img">
 
-<a href="/" class="btn">🏠 Retour Accueil</a>
-
-</div>
+<a href="index.html" class="btn">🏠 Retour Accueil</a>
 
 </body>
-</html
+</html>
