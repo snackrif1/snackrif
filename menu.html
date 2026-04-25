@@ -1,3 +1,4 @@
+"}
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,65 +12,57 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(180deg, #0d0d0d 0%, #1a0000 100%);
     color: white;
-}
-
-/* CONTAINER (الحل الرئيسي) /
-.container {
-    max-width: 500px;
-    margin: auto;
     text-align: center;
 }
 
-/ LOGO /
-.logo {
-    margin-top: 20px;
+/* الكونتينر /
+.container {
+    width: 100%;
+    max-width: 380px; / صغّرنا أكثر /
+    margin: auto;
 }
 
+/ LOGO /
 .logo img {
-    width: 110px;
+    width: 95px;
+    margin-top: 15px;
 }
 
 / TITLE /
 h1 {
+    font-size: 22px;
     margin: 10px 0;
-    font-size: 26px;
-    letter-spacing: 2px;
 }
 
-/ MENU IMAGES /
+/ الصور /
 .menu-img {
     width: 100%;
-    margin: 20px 0;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(255,0,0,0.25);
-    transition: transform 0.3s ease;
+    max-width: 340px; / مهم بزاف /
+    margin: 15px auto;
+    border-radius: 12px;
+    display: block;
 }
 
-.menu-img:hover {
-    transform: scale(1.02);
-}
-
-/ BUTTON /
+/ زر /
 .btn {
     display: inline-block;
-    margin: 25px 0;
-    padding: 12px 25px;
-    background: linear-gradient(45deg, red, #ff4d4d);
+    margin: 20px 0;
+    padding: 10px 22px;
+    background: red;
     color: white;
     text-decoration: none;
-    border-radius: 30px;
-    font-size: 15px;
-    transition: 0.3s;
+    border-radius: 25px;
+    font-size: 14px;
 }
 
-.btn:hover {
-    transform: scale(1.05);
-}
-
-/ PC FIX /
+/ PC */
 @media (min-width: 768px) {
     .container {
-        max-width: 420px; / هذا هو السر */
+        max-width: 360px;
+    }
+
+    .menu-img {
+        max-width: 320px;
     }
 }
 </style>
@@ -81,7 +74,7 @@ h1 {
 <div class="container">
 
     <div class="logo">
-        <img src="logo.png" alt="Snack Rif">
+        <img src="logo.png">
     </div>
 
     <h1>📋 MENU</h1>
@@ -93,9 +86,9 @@ h1 {
     <img src="menu5.jpg" class="menu-img">
     <img src="menu6.jpg" class="menu-img">
 
-    <a href="index.html" class="btn">🏠 Retour Accueil</a>
+    <a href="index.html" class="btn">🏠 Retour</a>
 
 </div>
 
 </body>
-</html>
+</ht
