@@ -9,62 +9,41 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(180deg, #0d0d0d 0%, #1a0000 100%);
+    background: #0d0d0d;
     color: white;
-}
-
-/* HEADER /
-.header {
     text-align: center;
-    padding: 15px 0;
 }
 
 .logo {
-    width: 85px; / صغرنا اللوغو /
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 120px;
 }
 
 h1 {
-    margin: 5px 0;
-    font-size: 22px;
+    margin: 10px 0;
+    font-size: 28px;
 }
 
-/ CONTAINER /
-.container {
-    max-width: 420px;
-    margin: auto;
-    text-align: center;
-}
-
-/ MENU IMAGES /
 .menu-img {
-    width: 100%;
-    max-width: 360px;
+    width: 90%;
+    max-width: 500px;
     margin: 15px auto;
-    border-radius: 12px;
+    border-radius: 15px;
     display: block;
 }
 
-/ BUTTON /
 .btn {
     display: inline-block;
-    margin: 20px 0;
-    padding: 10px 22px;
+    margin: 25px;
+    padding: 12px 25px;
     background: red;
     color: white;
     text-decoration: none;
-    border-radius: 25px;
-    font-size: 14px;
-}
-
-/ PC */
-@media (min-width: 768px) {
-    .container {
-        max-width: 380px;
-    }
-
-    .menu-img {
-        max-width: 330px;
-    }
+    border-radius: 30px;
+    font-size: 16px;
 }
 </style>
 
@@ -72,25 +51,20 @@ h1 {
 
 <body>
 
-<!-- HEADER -->
-<div class="header">
-    <img src="logo.png" class="logo">
-    <h1>📋 MENU</h1>
+<div class="logo">
+    <img src="logo.png" alt="Snack Rif">
 </div>
 
-<!-- MENU -->
-<div class="container">
+<h1>📋 MENU</h1>
 
-    <img src="menu1.jpg" class="menu-img">
-    <img src="menu2.jpg" class="menu-img">
-    <img src="menu3.jpg" class="menu-img">
-    <img src="menu4.jpg" class="menu-img">
-    <img src="menu5.jpg" class="menu-img">
-    <img src="menu6.jpg" class="menu-img">
+<img src="menu1.jpg" class="menu-img">
+<img src="menu2.jpg" class="menu-img">
+<img src="menu3.jpg" class="menu-img">
+<img src="menu4.jpg" class="menu-img">
+<img src="menu5.jpg" class="menu-img">
+<img src="menu6.jpg" class="menu-img">
 
-    <a href="index.html" class="btn">🏠 Retour Accueil</a>
-
-</div>
+<a href="index.html" class="btn">🏠 Retour Accueil</a>
 
 </body>
 </html>
