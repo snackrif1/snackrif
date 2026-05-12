@@ -9,15 +9,15 @@
 
 body{
     margin:0;
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
     background:#e9dfcf;
-    color:white;
     text-align:center;
 }
 
 .hero{
-    background:linear-gradient(to bottom,#000,#2a0000);
-    padding-bottom:40px;
+    background:linear-gradient(to bottom,#120000,#2a0c03);
+    padding-bottom:45px;
+    color:white;
 }
 
 .cover{
@@ -35,16 +35,15 @@ body{
 }
 
 .subtitle{
-    color:#f4d08d;
+    color:#f1c77b;
     font-size:24px;
     font-weight:bold;
     letter-spacing:2px;
 }
 
 .desc{
-    color:white;
     font-size:20px;
-    margin-top:25px;
+    margin-top:20px;
 }
 
 .menu-btn{
@@ -53,9 +52,9 @@ body{
     background:#ff3b30;
     color:white;
     text-decoration:none;
-    font-size:38px;
+    font-size:32px;
     font-weight:bold;
-    padding:35px 70px;
+    padding:28px 65px;
     border-radius:60px;
     box-shadow:0 10px 25px rgba(255,0,0,.35);
     transition:.25s;
@@ -66,11 +65,12 @@ body{
 }
 
 .contact-box{
-    background:#f1e7d8;
-    width:85%;
+    background:#f2e7d7;
+    width:88%;
+    max-width:850px;
     margin:50px auto;
     border-radius:40px;
-    padding:40px 20px;
+    padding:45px 20px;
 }
 
 .contact-title{
@@ -80,19 +80,23 @@ body{
     margin-bottom:40px;
 }
 
+.contact-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
 .btn{
-    width:85%;
-    margin:25px auto;
-    padding:30px;
-    border-radius:40px;
-    font-size:30px;
-    font-weight:bold;
-    color:white;
-    text-decoration:none;
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:20px;
+    gap:18px;
+    padding:28px;
+    border-radius:35px;
+    font-size:24px;
+    font-weight:bold;
+    color:white;
+    text-decoration:none;
     transition:.25s;
     box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
@@ -102,45 +106,50 @@ body{
 }
 
 .btn img{
-    width:45px;
+    width:42px;
+    height:42px;
 }
 
 .whatsapp{
-    background:#6fd06a;
+    background:#67d46f;
 }
 
 .instagram{
-    background:#c34182;
+    background:#cc3b7a;
 }
 
 .tiktok{
-    background:black;
+    background:#000;
 }
 
-.maps{
-    background:#b6533f;
+.location{
+    background:#b94735;
 }
 
 .address{
     color:#2b120d;
     font-size:22px;
-    line-height:1.7;
+    line-height:1.8;
     margin-top:40px;
+}
+
+.phone{
+    margin-top:30px;
 }
 
 .phone a{
     color:#2b120d;
     text-decoration:none;
-    font-size:28px;
+    font-size:30px;
     font-weight:bold;
 }
 
 .footer{
-    background:#2a0000;
+    background:#2a0c03;
     color:white;
     padding:25px;
+    font-size:20px;
     margin-top:50px;
-    font-size:22px;
 }
 
 </style>
@@ -174,33 +183,64 @@ Halal • Fresh • Delicious
 CONTACTO
 </div>
 
-<a class="btn whatsapp" href="https://wa.me/34666290425" target="_blank">
+<div class="contact-buttons">
+
+<a class="btn whatsapp"
+href="https://wa.me/34666290425"
+target="_blank">
+
 <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+
 Pedir por WhatsApp
+
 </a>
 
-<a class="btn instagram" href="https://instagram.com/" target="_blank">
+<a class="btn instagram"
+href="https://instagram.com/cafeteria_saad7"
+target="_blank">
+
 <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+
 Síguenos en Instagram
+
 </a>
 
-<a class="btn tiktok" href="https://tiktok.com/" target="_blank">
+<a class="btn tiktok"
+href="https://www.tiktok.com/@yassinrifland1"
+target="_blank">
+
 <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
+
 Ver TikTok
+
 </a>
 
-<a class="btn maps" href="https://maps.google.com/?q=Carrer+de+Francesc+Manuel+de+los+Herreros+Levante+07005+Palma+Spain" target="_blank">
-📍 Cómo llegar
+<a class="btn location"
+href="https://maps.app.goo.gl/aAAK2wFcn8YTx4iX9?g_st=ic"
+target="_blank">
+
+<img src="https://cdn-icons-png.flaticon.com/512/684/684908.png">
+
+Cómo llegar
+
 </a>
 
-<div class="address">
-📍 Carrer de Francesc Manuel de los Herreros,<br>
-Levante, 07005 Palma,<br>
-Illes Balears, Spain
 </div>
 
-<div class="phone" style="margin-top:35px;">
-📞 <a href="tel:+34666290425">+34 666 29 04 25</a>
+<div class="address">
+
+📍 Carrer de Francesc Manuel de los Herreros,<br>
+Llevant, 07005 Palma,<br>
+Illes Balears, España
+
+</div>
+
+<div class="phone">
+
+📞 <a href="tel:+34666290425">
++34 666 29 04 25
+</a>
+
 </div>
 
 </div>
