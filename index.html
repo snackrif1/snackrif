@@ -1,253 +1,292 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Snack Rif</title>
+
+<title>Snack Rif Cafeteria | Fast Food Halal en Palma</title>
+
+<meta name="description" content="Snack Rif Cafeteria & Fast Food en Palma. Comida halal marroquí, tacos, burgers, desayunos, café y bebidas frescas.">
+
+<meta name="keywords" content="Snack Rif, cafetería halal palma, fast food halal mallorca, comida marroquí palma, burgers halal, tacos halal, cafeteria palma">
+
+<meta name="author" content="Snack Rif">
+
+<meta property="og:title" content="Snack Rif Cafeteria">
+<meta property="og:description" content="Fast Food & Cafeteria Halal en Palma">
+<meta property="og:image" content="cover.jpg">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="logo.PNG">
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
 body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#e9dfcf;
-    text-align:center;
+background:#ece4d4;
+color:#2b140f;
+text-align:center;
 }
 
-.hero{
-    background:linear-gradient(to bottom,#120000,#2a0c03);
-    padding-bottom:45px;
-    color:white;
+/* COVER */
+
+.cover img{
+width:100%;
+display:block;
 }
 
-.cover{
-    width:100%;
-    display:block;
+/* MAIN SECTION */
+
+.main-section{
+padding:45px 20px;
+background:linear-gradient(to bottom,#3b0904,#210403);
+color:white;
 }
 
-.hero h1{
-    font-size:58px;
-    line-height:1.1;
-    font-weight:900;
-    margin-top:40px;
-    margin-bottom:10px;
-    letter-spacing:2px;
+/* TITLE */
+
+.main-title{
+font-size:75px;
+font-weight:bold;
+line-height:1.05;
+margin-bottom:25px;
 }
 
 .subtitle{
-    color:#f1c77b;
-    font-size:24px;
-    font-weight:bold;
-    letter-spacing:2px;
+font-size:38px;
+color:#f4c777;
+font-weight:bold;
+margin-bottom:25px;
 }
 
-.desc{
-    font-size:20px;
-    margin-top:20px;
+.description{
+font-size:26px;
+line-height:1.7;
+max-width:900px;
+margin:auto;
+margin-bottom:40px;
 }
 
-.menu-btn{
-    display:inline-block;
-    margin-top:40px;
-    background:#ff3b30;
-    color:white;
-    text-decoration:none;
-    font-size:32px;
-    font-weight:bold;
-    padding:28px 65px;
-    border-radius:60px;
-    box-shadow:0 10px 25px rgba(255,0,0,.35);
-    transition:.25s;
+/* BUTTON */
+
+.menu-button{
+display:inline-block;
+background:#ff3a32;
+color:white;
+padding:24px 55px;
+border-radius:45px;
+font-size:38px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 0 30px rgba(255,0,0,0.5);
+margin-bottom:40px;
 }
 
-.menu-btn:active{
-    transform:scale(.97);
-}
+/* CONTACT BOX */
 
 .contact-box{
-    background:#f2e7d7;
-    width:88%;
-    max-width:850px;
-    margin:50px auto;
-    border-radius:40px;
-    padding:45px 20px;
+background:#f4ead9;
+margin:40px auto;
+padding:35px 25px;
+border-radius:30px;
+max-width:900px;
+color:#2b140f;
 }
 
 .contact-title{
-    color:#2b120d;
-    font-size:42px;
-    font-weight:900;
-    margin-bottom:40px;
+font-size:50px;
+margin-bottom:35px;
 }
 
-.contact-buttons{
-    display:flex;
-    flex-direction:column;
-    gap:25px;
-}
-
-.btn{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:18px;
-    padding:28px;
-    border-radius:35px;
-    font-size:24px;
-    font-weight:bold;
-    color:white;
-    text-decoration:none;
-    transition:.25s;
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-}
-
-.btn:active{
-    transform:scale(.97);
-}
-
-.btn img{
-    width:42px;
-    height:42px;
+.contact-btn{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:18px;
+padding:26px;
+margin:22px auto;
+border-radius:35px;
+text-decoration:none;
+font-size:34px;
+font-weight:bold;
+color:white;
+max-width:700px;
 }
 
 .whatsapp{
-    background:#67d46f;
+background:#64d36b;
 }
 
 .instagram{
-    background:#cc3b7a;
+background:#c74384;
 }
 
 .tiktok{
-    background:#000;
+background:#000;
 }
 
-.location{
-    background:#b94735;
+.maps{
+background:#b2553f;
+}
+
+/* ADDRESS */
+
+.address{
+font-size:28px;
+line-height:1.8;
+margin-top:40px;
+}
+
+/* PHONE */
+
+.phone{
+display:inline-block;
+margin-top:30px;
+font-size:42px;
+font-weight:bold;
+color:#003cff;
+}
+
+/* FOOTER */
+
+footer{
+background:#2b0905;
+color:white;
+padding:30px;
+font-size:24px;
+margin-top:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.main-title{
+font-size:58px;
+}
+
+.subtitle{
+font-size:28px;
+}
+
+.description{
+font-size:22px;
+}
+
+.menu-button{
+font-size:30px;
+padding:22px 35px;
+width:85%;
+}
+
+.contact-title{
+font-size:42px;
+}
+
+.contact-btn{
+font-size:28px;
+width:100%;
 }
 
 .address{
-    color:#2b120d;
-    font-size:22px;
-    line-height:1.8;
-    margin-top:40px;
+font-size:24px;
 }
 
 .phone{
-    margin-top:30px;
+font-size:34px;
 }
 
-.phone a{
-    color:#2b120d;
-    text-decoration:none;
-    font-size:30px;
-    font-weight:bold;
-}
-
-.footer{
-    background:#2a0c03;
-    color:white;
-    padding:25px;
-    font-size:20px;
-    margin-top:50px;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<div class="hero">
+<!-- COVER -->
 
-<img src="cover.jpg" class="cover">
+<div class="cover">
+<img src="cover.jpg" alt="Snack Rif Fast Food Halal Palma">
+</div>
 
-<h1>SNACK<br>RIF</h1>
+<!-- MAIN -->
+
+<section class="main-section">
+
+<h1 class="main-title">
+SNACK RIF
+</h1>
 
 <div class="subtitle">
 FAST FOOD • CAFETERIA
 </div>
 
-<div class="desc">
-Halal • Fresh • Delicious
+<div class="description">
+
+Comida halal marroquí en Palma.  
+Burgers, tacos, desayunos, café marroquí, batidos y bebidas frescas.
+
 </div>
 
-<a href="menu.html" class="menu-btn">
+<a href="menu.html" class="menu-button">
 📋 VER MENÚ
 </a>
 
-</div>
+</section>
+
+<!-- CONTACT -->
 
 <div class="contact-box">
 
 <div class="contact-title">
-CONTACTO
+📱 CONTACTO
 </div>
 
-<div class="contact-buttons">
-
-<a class="btn whatsapp"
-href="https://wa.me/34666290425"
-target="_blank">
-
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-
-Pedir por WhatsApp
-
+<a class="contact-btn whatsapp" href="https://wa.me/34666290425">
+🟢 Pedir por WhatsApp
 </a>
 
-<a class="btn instagram"
-href="https://instagram.com/cafeteria_saad7"
-target="_blank">
-
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
-
-Síguenos en Instagram
-
+<a class="contact-btn instagram" href="https://instagram.com/snackrif">
+📸 Síguenos en Instagram
 </a>
 
-<a class="btn tiktok"
-href="https://www.tiktok.com/@yassinrifland1"
-target="_blank">
-
-<img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
-
-Ver TikTok
-
+<a class="contact-btn tiktok" href="https://tiktok.com">
+🎵 Ver TikTok
 </a>
 
-<a class="btn location"
-href="https://maps.app.goo.gl/aAAK2wFcn8YTx4iX9?g_st=ic"
-target="_blank">
-
-<img src="https://cdn-icons-png.flaticon.com/512/684/684908.png">
-
-Cómo llegar
-
+<a class="contact-btn maps" href="https://maps.app.goo.gl/aAAK2wFcn8YTx4iX9?g_st=ic">
+📍 Cómo llegar
 </a>
-
-</div>
 
 <div class="address">
 
-📍 Carrer de Francesc Manuel de los Herreros,<br>
-Llevant, 07005 Palma,<br>
-Illes Balears, España
+📍 Carrer de Francesc Manuel de los Herreros,  
+Levante, 07005 Palma,  
+Illes Balears, Spain
 
 </div>
 
-<div class="phone">
-
-📞 <a href="tel:+34666290425">
-+34 666 29 04 25
+<a class="phone" href="tel:+34666290425">
+📞 +34 666 29 04 25
 </a>
 
 </div>
 
-</div>
+<!-- FOOTER -->
 
-<div class="footer">
+<footer>
 © Snack Rif Cafeteria
-</div>
+</footer>
 
 </body>
 </html>
