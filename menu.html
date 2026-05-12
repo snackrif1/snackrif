@@ -1,33 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Menu - Snack Rif</title>
+<title>Snack Rif - Menú</title>
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
 body{
-    margin:0;
-    background:#e8dfcf;
-    font-family:Arial,sans-serif;
+background:#ece4d4;
+color:#2b140f;
+text-align:center;
 }
 
-.menu-logo{
-    text-align:center;
-    padding:30px 0;
+/* COVER */
+
+.cover img{
+width:100%;
+display:block;
 }
 
-.menu-logo img{
-    width:230px;
-    border-radius:25px;
+/* LOGO */
+
+.logo-section{
+padding:25px 15px 10px;
 }
 
-.menu-image{
-    width:100%;
-    display:block;
-    margin-bottom:20px;
+.logo-section img{
+width:85%;
+max-width:520px;
+}
+
+/* MENU BUTTON */
+
+.menu-btn{
+display:inline-block;
+margin:25px auto 45px;
+padding:22px 45px;
+background:#ff3a32;
+color:white;
+font-size:38px;
+font-weight:bold;
+text-decoration:none;
+border-radius:40px;
+box-shadow:0 0 25px rgba(255,0,0,0.45);
+}
+
+/* MENU IMAGES */
+
+.menu-container{
+padding:0 12px;
+}
+
+.menu-container img{
+width:100%;
+max-width:900px;
+margin:18px auto;
+border-radius:20px;
+display:block;
+box-shadow:0 6px 20px rgba(0,0,0,0.18);
+}
+
+/* BACK BUTTON */
+
+.back-home{
+display:inline-block;
+margin:45px auto 60px;
+padding:18px 40px;
+background:#1d1d1d;
+color:white;
+text-decoration:none;
+font-size:28px;
+font-weight:bold;
+border-radius:35px;
+box-shadow:0 0 18px rgba(0,0,0,0.25);
+}
+
+/* FOOTER */
+
+footer{
+background:#2b0905;
+color:white;
+padding:25px;
+font-size:24px;
+margin-top:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.logo-section img{
+width:92%;
+}
+
+.menu-btn{
+font-size:30px;
+padding:20px 35px;
+width:85%;
+}
+
+.back-home{
+font-size:24px;
+width:80%;
+}
+
+footer{
+font-size:20px;
+}
+
 }
 
 </style>
@@ -35,15 +126,52 @@ body{
 
 <body>
 
-<div class="menu-logo">
-    <img src="logo.png">
+<!-- COVER -->
+
+<div class="cover">
+<img src="cover.jpg" alt="Snack Rif Cover">
 </div>
 
-<img src="menu1.jpg" class="menu-image">
-<img src="menu2.jpg" class="menu-image">
-<img src="menu3.jpg" class="menu-image">
-<img src="menu4.jpg" class="menu-image">
-<img src="menu5.jpg" class="menu-image">
+<!-- LOGO -->
+
+<div class="logo-section">
+<img src="logo.png" alt="Snack Rif Logo">
+</div>
+
+<!-- MENU BUTTON -->
+
+<a href="#menu" class="menu-btn">
+📋 VER MENÚ
+</a>
+
+<!-- MENU -->
+
+<div class="menu-container" id="menu">
+
+<img src="menu1.jpg" alt="Menu 1">
+<img src="menu2.jpg" alt="Menu 2">
+<img src="menu3.jpg" alt="Menu 3">
+<img src="menu4.jpg" alt="Menu 4">
+<img src="menu5.jpg" alt="Menu 5">
+<img src="menu6.jpg" alt="Menu 6">
+<img src="menu7.jpg" alt="Menu 7">
+<img src="menu8.jpg" alt="Menu 8">
+<img src="menu9.jpg" alt="Menu 9">
+<img src="menu10.jpg" alt="Menu 10">
+
+</div>
+
+<!-- BACK BUTTON -->
+
+<a href="index.html" class="back-home">
+⬅ Volver al inicio
+</a>
+
+<!-- FOOTER -->
+
+<footer>
+© Snack Rif Cafeteria
+</footer>
 
 </body>
 </html>
