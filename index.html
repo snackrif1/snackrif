@@ -8,9 +8,9 @@
 
 <title>Snack Rif Cafeteria | Fast Food Halal en Palma</title>
 
-<meta name="description" content="Snack Rif Cafeteria & Fast Food en Palma. Comida halal marroquí, tacos, burgers, desayunos, café y bebidas frescas.">
+<meta name="description" content="La mejor comida halal marroquí en Palma. Burgers, tacos, desayunos, café marroquí, batidos y bebidas frescas.">
 
-<meta name="keywords" content="Snack Rif, cafetería halal palma, fast food halal mallorca, comida marroquí palma, burgers halal, tacos halal, cafeteria palma">
+<meta name="keywords" content="Snack Rif, cafetería halal palma, fast food halal mallorca, comida marroquí palma, burgers halal, tacos halal">
 
 <meta name="author" content="Snack Rif">
 
@@ -20,6 +20,11 @@
 <meta property="og:type" content="website">
 
 <link rel="icon" href="logo.PNG">
+
+<!-- ICONS -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
 
@@ -44,7 +49,7 @@ width:100%;
 display:block;
 }
 
-/* MAIN SECTION */
+/* MAIN */
 
 .main-section{
 padding:45px 20px;
@@ -52,20 +57,24 @@ background:linear-gradient(to bottom,#3b0904,#210403);
 color:white;
 }
 
-/* TITLE */
-
 .main-title{
 font-size:75px;
 font-weight:bold;
 line-height:1.05;
-margin-bottom:25px;
+margin-bottom:20px;
 }
 
 .subtitle{
 font-size:38px;
 color:#f4c777;
 font-weight:bold;
-margin-bottom:25px;
+margin-bottom:20px;
+}
+
+.location{
+font-size:28px;
+margin-bottom:30px;
+color:#f7d48a;
 }
 
 .description{
@@ -91,7 +100,7 @@ box-shadow:0 0 30px rgba(255,0,0,0.5);
 margin-bottom:40px;
 }
 
-/* CONTACT BOX */
+/* CONTACT */
 
 .contact-box{
 background:#f4ead9;
@@ -103,7 +112,7 @@ color:#2b140f;
 }
 
 .contact-title{
-font-size:50px;
+font-size:55px;
 margin-bottom:35px;
 }
 
@@ -112,7 +121,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 gap:18px;
-padding:26px;
+padding:28px;
 margin:22px auto;
 border-radius:35px;
 text-decoration:none;
@@ -120,14 +129,25 @@ font-size:34px;
 font-weight:bold;
 color:white;
 max-width:700px;
+transition:0.3s;
 }
 
+.contact-btn:hover{
+transform:scale(1.03);
+}
+
+.contact-btn i{
+font-size:42px;
+}
+
+/* COLORS */
+
 .whatsapp{
-background:#64d36b;
+background:#61d66b;
 }
 
 .instagram{
-background:#c74384;
+background:#c24483;
 }
 
 .tiktok{
@@ -135,7 +155,7 @@ background:#000;
 }
 
 .maps{
-background:#b2553f;
+background:#b05c47;
 }
 
 /* ADDRESS */
@@ -154,6 +174,7 @@ margin-top:30px;
 font-size:42px;
 font-weight:bold;
 color:#003cff;
+text-decoration:none;
 }
 
 /* FOOTER */
@@ -178,6 +199,10 @@ font-size:58px;
 font-size:28px;
 }
 
+.location{
+font-size:22px;
+}
+
 .description{
 font-size:22px;
 }
@@ -193,8 +218,13 @@ font-size:42px;
 }
 
 .contact-btn{
-font-size:28px;
+font-size:27px;
 width:100%;
+padding:24px;
+}
+
+.contact-btn i{
+font-size:36px;
 }
 
 .address{
@@ -231,9 +261,13 @@ SNACK RIF
 FAST FOOD • CAFETERIA
 </div>
 
+<div class="location">
+📍 Palma de Mallorca
+</div>
+
 <div class="description">
 
-Comida halal marroquí en Palma.  
+La mejor comida halal marroquí en Palma.  
 Burgers, tacos, desayunos, café marroquí, batidos y bebidas frescas.
 
 </div>
@@ -249,23 +283,39 @@ Burgers, tacos, desayunos, café marroquí, batidos y bebidas frescas.
 <div class="contact-box">
 
 <div class="contact-title">
-📱 CONTACTO
+☎️ CONTACTO
 </div>
 
-<a class="contact-btn whatsapp" href="https://wa.me/34666290425">
-🟢 Pedir por WhatsApp
+<a class="contact-btn whatsapp"
+href="https://wa.me/34666290425">
+
+<i class="fab fa-whatsapp"></i>
+Pedir por WhatsApp
+
 </a>
 
-<a class="contact-btn instagram" href="https://instagram.com/snackrif">
-📸 Síguenos en Instagram
+<a class="contact-btn instagram"
+href="https://instagram.com/snackrif">
+
+<i class="fab fa-instagram"></i>
+Síguenos en Instagram
+
 </a>
 
-<a class="contact-btn tiktok" href="https://tiktok.com">
-🎵 Ver TikTok
+<a class="contact-btn tiktok"
+href="https://tiktok.com">
+
+<i class="fab fa-tiktok"></i>
+Ver TikTok
+
 </a>
 
-<a class="contact-btn maps" href="https://maps.app.goo.gl/aAAK2wFcn8YTx4iX9?g_st=ic">
-📍 Cómo llegar
+<a class="contact-btn maps"
+href="https://maps.app.goo.gl/aAAK2wFcn8YTx4iX9?g_st=ic">
+
+<i class="fas fa-location-dot"></i>
+Cómo llegar
+
 </a>
 
 <div class="address">
@@ -277,7 +327,9 @@ Illes Balears, Spain
 </div>
 
 <a class="phone" href="tel:+34666290425">
+
 📞 +34 666 29 04 25
+
 </a>
 
 </div>
