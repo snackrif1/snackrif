@@ -3,135 +3,143 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Snack Rif</title>
 
 <style>
 
 body{
     margin:0;
-    background:#e8dfcf;
-    font-family:Arial,sans-serif;
-    color:#fff;
+    font-family:Arial, sans-serif;
+    background:#e9dfcf;
+    color:white;
+    text-align:center;
 }
 
-.cover img{
+.hero{
+    background:linear-gradient(to bottom,#000,#2a0000);
+    padding-bottom:40px;
+}
+
+.cover{
     width:100%;
     display:block;
 }
 
-.hero{
-    background:linear-gradient(to bottom,#1a0000,#2a0c03);
-    text-align:center;
-    padding:40px 20px;
-}
-
 .hero h1{
-    font-size:75px;
-    margin:0;
-    font-weight:bold;
-}
-
-.hero h2{
-    color:#f0c67b;
-    margin-top:15px;
-    font-size:28px;
+    font-size:58px;
+    line-height:1.1;
+    font-weight:900;
+    margin-top:40px;
+    margin-bottom:10px;
     letter-spacing:2px;
 }
 
-.hero p{
+.subtitle{
+    color:#f4d08d;
+    font-size:24px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.desc{
+    color:white;
     font-size:20px;
-    margin-top:20px;
+    margin-top:25px;
 }
 
 .menu-btn{
     display:inline-block;
-    margin-top:35px;
-    background:#ff2a2a;
+    margin-top:40px;
+    background:#ff3b30;
     color:white;
     text-decoration:none;
-    padding:24px 80px;
-    border-radius:60px;
-    font-size:32px;
+    font-size:38px;
     font-weight:bold;
-    box-shadow:0 0 30px rgba(255,0,0,.6);
+    padding:35px 70px;
+    border-radius:60px;
+    box-shadow:0 10px 25px rgba(255,0,0,.35);
+    transition:.25s;
+}
+
+.menu-btn:active{
+    transform:scale(.97);
 }
 
 .contact-box{
-    background:#efe5d6;
-    margin:35px;
+    background:#f1e7d8;
+    width:85%;
+    margin:50px auto;
     border-radius:40px;
-    padding:40px 25px;
+    padding:40px 20px;
 }
 
 .contact-title{
-    text-align:center;
-    color:#2d140d;
-    font-size:55px;
-    margin-bottom:35px;
-}
-
-.contact-buttons{
-    display:flex;
-    flex-direction:column;
-    gap:25px;
+    color:#2b120d;
+    font-size:42px;
+    font-weight:900;
+    margin-bottom:40px;
 }
 
 .btn{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:18px;
-    padding:28px;
-    border-radius:35px;
-    font-size:22px;
+    width:85%;
+    margin:25px auto;
+    padding:30px;
+    border-radius:40px;
+    font-size:30px;
     font-weight:bold;
     color:white;
     text-decoration:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    transition:.25s;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.btn:active{
+    transform:scale(.97);
 }
 
 .btn img{
-    width:38px;
-    height:38px;
+    width:45px;
 }
 
 .whatsapp{
-    background:#66d46d;
+    background:#6fd06a;
 }
 
 .instagram{
-    background:#cc3d7d;
+    background:#c34182;
 }
 
 .tiktok{
-    background:#000;
+    background:black;
 }
 
-.location{
-    background:#b64835;
+.maps{
+    background:#b6533f;
 }
 
 .address{
-    text-align:center;
-    color:#2d140d;
-    margin-top:40px;
+    color:#2b120d;
     font-size:22px;
-    line-height:1.8;
+    line-height:1.7;
+    margin-top:40px;
 }
 
-.phone{
-    text-align:center;
-    margin-top:30px;
-    color:#2d140d;
-    font-size:30px;
+.phone a{
+    color:#2b120d;
+    text-decoration:none;
+    font-size:28px;
     font-weight:bold;
 }
 
-footer{
-    background:#2a0c03;
+.footer{
+    background:#2a0000;
     color:white;
-    text-align:center;
     padding:25px;
+    margin-top:50px;
     font-size:22px;
 }
 
@@ -140,69 +148,66 @@ footer{
 
 <body>
 
-<div class="cover">
-    <img src="cover.jpg">
-</div>
-
 <div class="hero">
 
-    <h1>SNACK RIF</h1>
+<img src="cover.jpg" class="cover">
 
-    <h2>FAST FOOD • CAFETERIA</h2>
+<h1>SNACK<br>RIF</h1>
 
-    <p>Halal • Fresh • Delicious</p>
+<div class="subtitle">
+FAST FOOD • CAFETERIA
+</div>
 
-    <a href="menu.html" class="menu-btn">
-        📋 VER MENÚ
-    </a>
+<div class="desc">
+Halal • Fresh • Delicious
+</div>
+
+<a href="menu.html" class="menu-btn">
+📋 VER MENÚ
+</a>
 
 </div>
 
 <div class="contact-box">
 
-    <div class="contact-title">
-        CONTACTO
-    </div>
+<div class="contact-title">
+CONTACTO
+</div>
 
-    <div class="contact-buttons">
+<a class="btn whatsapp" href="https://wa.me/34666290425" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+Pedir por WhatsApp
+</a>
 
-        <a href="https://wa.me/34666290425" class="btn whatsapp">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-            Pedir por WhatsApp
-        </a>
+<a class="btn instagram" href="https://instagram.com/" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+Síguenos en Instagram
+</a>
 
-        <a href="https://instagram.com/snackrif" class="btn instagram">
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
-            Síguenos en Instagram
-        </a>
+<a class="btn tiktok" href="https://tiktok.com/" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
+Ver TikTok
+</a>
 
-        <a href="https://tiktok.com" class="btn tiktok">
-            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
-            Ver TikTok
-        </a>
+<a class="btn maps" href="https://maps.google.com/?q=Carrer+de+Francesc+Manuel+de+los+Herreros+Levante+07005+Palma+Spain" target="_blank">
+📍 Cómo llegar
+</a>
 
-        <a href="https://maps.google.com" class="btn location">
-            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png">
-            Cómo llegar
-        </a>
+<div class="address">
+📍 Carrer de Francesc Manuel de los Herreros,<br>
+Levante, 07005 Palma,<br>
+Illes Balears, Spain
+</div>
 
-    </div>
-
-    <div class="address">
-        📍 Carrer de Francesc Manuel de los Herreros,<br>
-        Levant, 07005 Palma,<br>
-        Illes Balears, Spain
-    </div>
-
-    <div class="phone">
-        📞 +34 666 29 04 25
-    </div>
+<div class="phone" style="margin-top:35px;">
+📞 <a href="tel:+34666290425">+34 666 29 04 25</a>
+</div>
 
 </div>
 
-<footer>
+<div class="footer">
 © Snack Rif Cafeteria
-</footer>
+</div>
 
 </body>
 </html>
