@@ -1,241 +1,208 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Snack Rif Cafeteria</title>
+<title>Snack Rif</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
 body{
-background:#efe2cf;
-font-family:Arial,sans-serif;
-text-align:center;
-color:#2b1a12;
+    margin:0;
+    background:#e8dfcf;
+    font-family:Arial,sans-serif;
+    color:#fff;
 }
 
-/* HEADER */
-
-.header{
-background:linear-gradient(to bottom,#120909,#2b1a12);
-padding-bottom:40px;
-border-bottom-left-radius:35px;
-border-bottom-right-radius:35px;
-box-shadow:0 5px 20px rgba(0,0,0,0.25);
+.cover img{
+    width:100%;
+    display:block;
 }
 
-.cover{
-width:100%;
-max-width:900px;
-display:block;
-margin:auto;
-border-bottom-left-radius:30px;
-border-bottom-right-radius:30px;
+.hero{
+    background:linear-gradient(to bottom,#1a0000,#2a0c03);
+    text-align:center;
+    padding:40px 20px;
 }
 
-.logo{
-width:190px;
-margin-top:25px;
-margin-bottom:15px;
-border-radius:20px;
+.hero h1{
+    font-size:75px;
+    margin:0;
+    font-weight:bold;
 }
 
-.title{
-font-size:58px;
-font-weight:bold;
-color:white;
-margin-top:10px;
+.hero h2{
+    color:#f0c67b;
+    margin-top:15px;
+    font-size:28px;
+    letter-spacing:2px;
 }
 
-.subtitle{
-font-size:24px;
-color:#d4b06a;
-margin-top:10px;
-font-weight:bold;
+.hero p{
+    font-size:20px;
+    margin-top:20px;
 }
 
-.desc{
-font-size:20px;
-color:#eee;
-margin-top:15px;
+.menu-btn{
+    display:inline-block;
+    margin-top:35px;
+    background:#ff2a2a;
+    color:white;
+    text-decoration:none;
+    padding:24px 80px;
+    border-radius:60px;
+    font-size:32px;
+    font-weight:bold;
+    box-shadow:0 0 30px rgba(255,0,0,.6);
 }
-
-/* BUTTON */
-
-.main-btn{
-display:inline-block;
-margin-top:35px;
-padding:22px 55px;
-background:#d40000;
-color:white;
-text-decoration:none;
-border-radius:60px;
-font-size:28px;
-font-weight:bold;
-box-shadow:0 0 20px rgba(212,0,0,0.45);
-transition:0.3s;
-}
-
-.main-btn:hover{
-background:#aa0000;
-transform:scale(1.03);
-}
-
-/* CONTACT */
 
 .contact-box{
-background:#f7ead7;
-width:92%;
-max-width:750px;
-margin:35px auto;
-padding:30px 20px;
-border-radius:35px;
-box-shadow:0 5px 15px rgba(0,0,0,0.10);
+    background:#efe5d6;
+    margin:35px;
+    border-radius:40px;
+    padding:40px 25px;
 }
 
 .contact-title{
-font-size:34px;
-margin-bottom:25px;
+    text-align:center;
+    color:#2d140d;
+    font-size:55px;
+    margin-bottom:35px;
 }
 
-/* SOCIAL BUTTONS */
+.contact-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
 
-.social-btn{
-display:block;
-width:100%;
-padding:22px;
-margin:18px 0;
-border-radius:22px;
-text-decoration:none;
-font-size:24px;
-font-weight:bold;
-color:white;
-transition:0.3s;
+.btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    padding:28px;
+    border-radius:35px;
+    font-size:22px;
+    font-weight:bold;
+    color:white;
+    text-decoration:none;
+}
+
+.btn img{
+    width:38px;
+    height:38px;
 }
 
 .whatsapp{
-background:#25D366;
+    background:#66d46d;
 }
 
 .instagram{
-background:#d62976;
+    background:#cc3d7d;
 }
 
 .tiktok{
-background:#111;
+    background:#000;
 }
 
-.maps{
-background:#c0392b;
+.location{
+    background:#b64835;
 }
 
-.social-btn:hover{
-transform:scale(1.02);
-opacity:0.92;
+.address{
+    text-align:center;
+    color:#2d140d;
+    margin-top:40px;
+    font-size:22px;
+    line-height:1.8;
 }
 
-/* INFO */
-
-.info{
-margin-top:30px;
-font-size:24px;
-line-height:1.8;
-color:#2b1a12;
+.phone{
+    text-align:center;
+    margin-top:30px;
+    color:#2d140d;
+    font-size:30px;
+    font-weight:bold;
 }
 
-/* FOOTER */
-
-.footer{
-margin-top:40px;
-padding:30px;
-background:#2b1a12;
-color:#eee;
-font-size:18px;
+footer{
+    background:#2a0c03;
+    color:white;
+    text-align:center;
+    padding:25px;
+    font-size:22px;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<!-- HEADER -->
-
-<div class="header">
-
-<img src="cover.jpg" class="cover">
-
-<img src="logo.png" class="logo">
-
-<div class="title">
-SNACK RIF
+<div class="cover">
+    <img src="cover.jpg">
 </div>
 
-<div class="subtitle">
-FAST FOOD • CAFETERIA
+<div class="hero">
+
+    <h1>SNACK RIF</h1>
+
+    <h2>FAST FOOD • CAFETERIA</h2>
+
+    <p>Halal • Fresh • Delicious</p>
+
+    <a href="menu.html" class="menu-btn">
+        📋 VER MENÚ
+    </a>
+
 </div>
-
-<div class="desc">
-Halal • Fresh • Delicious
-</div>
-
-<a href="menu.html" class="main-btn">
-📋 VER MENÚ
-</a>
-
-</div>
-
-<!-- CONTACT -->
 
 <div class="contact-box">
 
-<div class="contact-title">
-📲 CONTACTO
+    <div class="contact-title">
+        CONTACTO
+    </div>
+
+    <div class="contact-buttons">
+
+        <a href="https://wa.me/34666290425" class="btn whatsapp">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+            Pedir por WhatsApp
+        </a>
+
+        <a href="https://instagram.com/snackrif" class="btn instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+            Síguenos en Instagram
+        </a>
+
+        <a href="https://tiktok.com" class="btn tiktok">
+            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
+            Ver TikTok
+        </a>
+
+        <a href="https://maps.google.com" class="btn location">
+            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png">
+            Cómo llegar
+        </a>
+
+    </div>
+
+    <div class="address">
+        📍 Carrer de Francesc Manuel de los Herreros,<br>
+        Levant, 07005 Palma,<br>
+        Illes Balears, Spain
+    </div>
+
+    <div class="phone">
+        📞 +34 666 29 04 25
+    </div>
+
 </div>
 
-<a href="https://wa.me/34666290425" class="social-btn whatsapp">
-🟢 Pedir por WhatsApp
-</a>
-
-<a href="https://instagram.com/cafeteria_saad7" class="social-btn instagram">
-📸 Síguenos en Instagram
-</a>
-
-<a href="https://www.tiktok.com/@yassinrifland1" class="social-btn tiktok">
-🎵 Ver TikTok
-</a>
-
-<a href="https://maps.app.goo.gl/SDaFA6cfvyLwsXZcA?g_st=ic" class="social-btn maps">
-📍 Cómo llegar
-</a>
-
-<div class="info">
-
-📍 Carrer de Francesc Manuel de los Herreros,<br>
-Llevant, 07005 Palma,<br>
-Illes Balears, Spain
-
-<br><br>
-
-📞 +34 666 29 04 25
-
-</div>
-
-</div>
-
-<!-- FOOTER -->
-
-<div class="footer">
+<footer>
 © Snack Rif Cafeteria
-</div>
+</footer>
 
 </body>
 </html>
